@@ -69,7 +69,7 @@ enum TransitOptions {
 
 ```
 
-### Day 4, complex data types, part 2
+### Day 4: complex data types, part 2
 
 > type annotations and ✅ checkpoint 2
 
@@ -85,8 +85,15 @@ username = "@nickgracilla"
 print (username)
 ```
 
-### Day 5, Conditions
+### Day 5: conditions
 
 * comparison operators: <, <=, ==, >, >=; ==, !=
 * Logical operators: &&, ||
 * Surprisingly, string comparisons in Swift are optimized. So `username == ""` is likely faster than `username.count == 0` — the count is quite inefficient, it has to count element in the string. `if username.isEmpty` is better!
+
+### Day 6: loops
+
+* `for i in 1...5` versus `for i in 1..<5`
+* `for _ in 1...5` when you don't need a variable
+* `while x < 0`: generally, while loops are less useful than for loops
+* `continue` vs `break`
