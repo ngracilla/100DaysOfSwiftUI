@@ -1,9 +1,8 @@
 import Cocoa
 
-let minKMtominMI = 1.609344
+func KMtoMI (minsPerKm : Double) {
+    let KMtoMIConversion = 1.609344
+    print("\(minsPerKm) min/km is \(minsPerKm * KMtoMIConversion) min/mi.")
+}
 
-let minutesPerKilometer :Double = 5
-let minutesPerMile :Double
-
-minutesPerMile = minutesPerKilometer * minKMtominMI
-print ("\(minutesPerKilometer) min/km is \(minutesPerMile) min/mi.")
+KMtoMI(minsPerKm: 5)
