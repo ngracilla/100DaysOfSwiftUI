@@ -6,6 +6,8 @@ Make a function, progressBar, that displays a Double percentage as a graphical p
  Distinguish between empty and full progress points, and
  provide an Emoji for more than 100% effort.
  
+ I managed to break this badly, still not working in Swift. Notion got sorted, tho.
+ 
  */
 
 func slice (_ str: String, _ start: Int, _ end: Int ) -> String {

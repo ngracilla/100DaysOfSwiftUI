@@ -117,4 +117,5 @@ print ("\(firstName)")
 ### Day 8: default values, throwing functions, and checkpoint 4
 
 * a real pleasure, providing default values for function parameters, then calling and skipping those arguments!
-* the final catch of a throw-catch function error is called Pokémon Exception Handling — Gotta catch em all!
+* the final catch of a throw-catch function error, which may catch all errors, is charmingly called Pokémon Exception Handling — Gotta catch em all!
+* see `function-error-handling.playground' for a fine example.
