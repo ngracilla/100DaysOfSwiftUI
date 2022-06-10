@@ -11,7 +11,7 @@
 
 ## Days 1-14: Introduction to Swift
 
-### Day 1: simple data types, part 1
+### Day 1: simple data types, part 1 - variables, constants, strings, and numbers
 
 > Variables, constants, strings, and numbers. Oh My!
 
@@ -21,7 +21,7 @@ Takeaways:
 * prefer constants over variables when possible for optimization, control, and to avoid mistakes
 * By convention, prefer camelCase for variable or constant naming style
 
-### Day 2: simple data types, part 2
+### Day 2: simple data types, part 2 - Booleans, string interpolation, and checkpoint 1
 
 > Booleans, string interpolation, and ✅ checkpoint 1
 
@@ -40,7 +40,7 @@ mutating func appendInterpolation(twitter: String) {
 print("Find me on Twitter: \(twitter: "nickgracilla").")
 ```
 
-### Day 3: complex data types, part 1
+### Day 3: complex data types, part 1 - Arrays, dictionaries, sets, and enums
 
 * **Arrays** store many values, with indices
 * **Dictionaries** are optimized for fast retrieval; can send back nil if you request a non existant key; can offer default values; and offer meaningful retrieval, like `cat["breed"]`.
@@ -70,7 +70,7 @@ enum TransitOptions {
 
 ```
 
-### Day 4: complex data types, part 2
+### Day 4: complex data types, part 2 - type annotations and checkpoint 2
 
 > type annotations and ✅ checkpoint 2
 
@@ -86,20 +86,20 @@ username = "@nickgracilla"
 print (username)
 ```
 
-### Day 5: conditions
+### Day 5: conditionals - if, switch, and the ternary operator
 
 * comparison operators: <, <=, ==, >, >=; ==, !=
 * Logical operators: &&, ||
 * Surprisingly, string comparisons in Swift are optimized. So `username == ""` is likely faster than `username.count == 0` — the count is quite inefficient, it has to count element in the string. `if username.isEmpty` is better!
 
-### Day 6: loops
+### Day 6: loops, summary, and checkpoint 3
 
 * `for i in 1...5` versus `for i in 1..<5`
 * `for _ in 1...5` when you don't need a variable
 * `while x < 0`: generally, while loops are less useful than for loops
 * `continue` vs `break`
 
-### Day 7: functions
+### Day 7: functions, parameters, and return values
 
 * function composition enables building functions out of existing functions
 * strictly speaking, we can distinguish between parameters and arguments: *parameters* are placeholders for functions and are used in the function definition; *arguments* are actual values passed to a function in the function call
@@ -113,3 +113,8 @@ print ("\(firstName)")
 ```
 
 * odd but common: functions can be distinguish by their parameter names, even when the function itself is named the same
+
+### Day 8: default values, throwing functions, and checkpoint 4
+
+* a real pleasure, providing default values for function parameters, then calling and skipping those arguments!
+* the final catch of a throw-catch function error is called Pokémon Exception Handling — Gotta catch em all!
