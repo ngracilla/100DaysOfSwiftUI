@@ -171,3 +171,17 @@ buyClothes(item: "jacket", using: payCash)
 ### Day 7: 20220611
 
 #### SwiftUI Day 10: Structs, part one
+
+### Day 8: 20220612
+
+Spent the day reviewing closures, and building the first 10 closure flashcards for study and training.
+
+### Day 9: 20220613
+
+#### SwiftUI Day 10: Structs, part one
+
+* call variables and constants within a struct `properties`
+* call functions within a struct `methods`
+* call variables and constants that instantiate a struct `instances`
+* call the struct property assignments when creating an instance `initalizers`
+* Structs that contain functions that change data must  be marked `mutating`, so that you cannot call a struct with a mutating function on a constant.
