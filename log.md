@@ -168,3 +168,6 @@ func buyClothes(item: String, using payment: () -> Void) {
 }
 buyClothes(item: "jacket", using: payCash)
 ```
+### Day 7: 20220611
+
+#### SwiftUI Day 10: Structs, part one
