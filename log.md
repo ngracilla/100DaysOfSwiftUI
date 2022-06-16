@@ -180,8 +180,25 @@ Spent the day reviewing closures, and building the first 10 closure flashcards f
 
 #### SwiftUI Day 10: Structs, part one
 
+* by convention, structs are defined first letter Cap
 * call variables and constants within a struct `properties`
-* call functions within a struct `methods`
+* call functions within a struct `methods`. "**Methods belong to a type**, such as structs, enums, and classes, whereas functions do not." (https://www.hackingwithswift.com/quick-start/understanding-swift/whats-the-difference-between-a-function-and-a-method)
+* NB: "There is one more advantage to methods, but it’s quite subtle: methods avoid namespace pollution."
 * call variables and constants that instantiate a struct `instances`
 * call the struct property assignments when creating an instance `initalizers`
 * Structs that contain functions that change data must  be marked `mutating`, so that you cannot call a struct with a mutating function on a constant.
+
+### Day 10: 20220614
+
+* Built additional flashcards for closures, and re-studied. Still not intuitive yet.
+
+### Day 11: 20220615
+
+#### SwiftUI Day 10: Structs, part one, revisited
+
+* See structs doc
+* creating custom initializers
+
+#### SwiftUI Day 11: Structs, and Access Control
+
+* if private properties, you must init them yourself and not use Swift's memberwise initializer.

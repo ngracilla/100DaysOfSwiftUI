@@ -91,3 +91,107 @@ let totalRainfall = {(inchesPerHour: Double, hours:Int) -> Double in
 }
 
 print("It's rained \(totalRainfall(1.75,3)) inches total.")
+
+/* -------
+ Closures as parameters to functions ------*/
+
+func photoOnSafari(day animal: () -> Void) {
+    print ("I'm going on safari, and I hope to photograph a...")
+    animal()
+}
+
+var monday = {
+    print("elephant")
+}
+var tuesday = {
+    print("giraffe")
+}
+var wednesday = {
+    print("zebra")
+}
+
+photoOnSafari(day: monday)
+photoOnSafari(day: tuesday)
+photoOnSafari(day: wednesday)
+
+
+/*------- */
+
+var bus = {
+    print("Let's take the express bus.")
+}
+var bike = {
+    print("It's nice out: let's bike.")
+}
+var uber = {
+    print("It would be quicker to take an Uber, no?")
+}
+
+func goDowntown(transit: () -> Void) {
+    print ("Let's go downtown.")
+    transit()
+}
+
+goDowntown(transit: bus)
+goDowntown(transit: bike)
+goDowntown(transit: uber)
+
+/*------- */
+
+var book1 = {
+    print("The Grapes of Wrath")
+}
+
+var book2 = {
+    print("The Mythical Man-Month")
+}
+
+func readBook(title: () -> Void) {
+    print("Let's read this book: ")
+    title()
+}
+
+readBook(title: book1)
+readBook(title: book2)
+
+/*------- */
+
+var venmo = {
+    print("Venmo")
+}
+var apple = {
+    print("Apple Cash")
+}
+var zelle = {
+    print("Zelle")
+}
+
+func payUsing(person: String, paymentMethod: () -> Void) {
+    print("Let's pay \(person), using...")
+    paymentMethod()
+}
+
+payUsing(person: "Eric", paymentMethod: zelle)
+payUsing(person: "John", paymentMethod: venmo)
+
+/*------- */
+
+var backstroke = {
+    print("the back stroke.")
+}
+
+var crawl = {
+    print("the crawl: it's my fastest.")
+}
+
+var butterfly = {
+    print("the butterfly. Watch me splash!")
+}
+
+func goSwimming(laps: Int, stroke: () -> Void) {
+    print("I'm going to swim \(laps) laps, using...")
+    stroke()
+}
+
+goSwimming(laps: 8, stroke: butterfly)
+goSwimming(laps: 12, stroke: backstroke)
