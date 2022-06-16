@@ -201,4 +201,14 @@ Spent the day reviewing closures, and building the first 10 closure flashcards f
 
 #### SwiftUI Day 11: Structs, and Access Control
 
-* if private properties, you must init them yourself and not use Swift's memberwise initializer.
+review `didSet` and `willSet`:
+
+- observers, for when something did change, or is about to change.
+
+
+* if private properties, you probably must init them yourself and not use Swift's memberwise initializer.
+* `private`, `fileprivate`, `public`
+* `private(set)`: let anyone read this, but only my struct to write to it
+* `static`: mark methods and properties as part of the struct itself, not instances. EG: test data that all instances of a struct can use.
+* `self`: the current value of a struct
+* `Self`: the current type of a struct
