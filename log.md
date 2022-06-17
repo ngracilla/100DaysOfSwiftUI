@@ -5,7 +5,7 @@ Note I've bundled several "days" of 100DaysOfSwiftUI into physical days, especia
 ## Current weakenesses
 
 > Things I notice through testing that I need to improve on
-
+* protocol getters and setters
 * 🟡 Define and complex empty collections
 * ✅ Define empty simple variables and constants
 
@@ -235,3 +235,19 @@ Very nice way of thinking of classes and variables:
 - variable class, variable property
 
 Checkpoint 7, done.
+
+### Day 13: 20220617
+
+#### SwiftUI Day 12: protocols and extensions
+
+* structs, classes, enums can adopt or conform to a protocol
+
+opaque return types: the point: your func can be non-explicit about what it returns, so you change your mind later. Swift compiler knows; but you can be flexible. Heavily used in SwiftUI: because layouts would specify complex return types.
+
+Extensions:
+- "protocol-oriented programming": POP: prefer to build functionality by composing protocols. OOP, prefers to build functionality through class inheritance.
+- how is it better than a function? Well: code completion; code organization; internal access (extensions are fully able to access everything of the protocol they extend).
+
+Checkpoint 8:
+
+- need to review: setter, getter
