@@ -212,3 +212,26 @@ review `didSet` and `willSet`:
 * `static`: mark methods and properties as part of the struct itself, not instances. EG: test data that all instances of a struct can use.
 * `self`: the current value of a struct
 * `Self`: the current type of a struct
+
+### Day 12: 20220616
+
+#### SwiftUI Day 12: classes and inheritance
+
+* SwiftUI uses structs extensively for UI design, and classes extensively for data. This is, perhaps, quite different from UIKit.
+
+Key differences (from https://www.hackingwithswift.com/quick-start/understanding-swift/why-does-swift-have-both-classes-and-structs):
+
+* structs have memberwise initializers, but classes do not (because of inheritance)
+* a class can inherit from other classes, but structs cannot inherit from each other
+* copies of structs are unique, but copies of classes point to the same, shared data; they are *reference types*
+* classes may have deinitializers called when an class instance is destroyed, structs do not
+* variable properties in constant classes can be modified, but they can't in structs
+
+Very nice way of thinking of classes and variables:
+
+- constnat class, constant property
+- constant class, variable property
+- variable class, constant property
+- variable class, variable property
+
+Checkpoint 7, done.
