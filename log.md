@@ -215,11 +215,12 @@ review `didSet` and `willSet`:
 
 ### Day 12: 20220616
 
-#### SwiftUI Day 12: classes and inheritance
+#### SwiftUI Day 12: classes, inheritance, checkpoint 7
 
-* SwiftUI uses structs extensively for UI design, and classes extensively for data. This is, perhaps, quite different from UIKit.
+* SwiftUI uses structs extensively for UI design, and classes extensively for data. This is quite different from UIKit.
+* classes, like structs, create new data types, with properties and methods
 
-Key differences (from https://www.hackingwithswift.com/quick-start/understanding-swift/why-does-swift-have-both-classes-and-structs):
+Key differences between classes and structs: (from https://www.hackingwithswift.com/quick-start/understanding-swift/why-does-swift-have-both-classes-and-structs):
 
 * structs have memberwise initializers, but classes do not (because of inheritance)
 * a class can inherit from other classes, but structs cannot inherit from each other
@@ -238,9 +239,7 @@ Checkpoint 7, done.
 
 ### Day 13: 20220617
 
-#### SwiftUI Day 12: protocols and extensions
-
-* structs, classes, enums can adopt or conform to a protocol
+#### SwiftUI Day 13: Protocols, extensions, checkpoint 8
 
 opaque return types: the point: your func can be non-explicit about what it returns, so you change your mind later. Swift compiler knows; but you can be flexible. Heavily used in SwiftUI: because layouts would specify complex return types.
 
@@ -251,3 +250,22 @@ Extensions:
 Checkpoint 8:
 
 - need to review: setter, getter
+
+### Day 14: 20220618
+
+#### SwiftUI Day 14: Optionals, checkpoint 9
+
+"reading a dictionary key will always return an optional": oh, I forgot that!
+
+see optionals.playground:
+
+* declaring, unwrapping optionals
+* unwrapped shadowing optionals within contexts
+* unwrapping optionals with guard
+* nil coalescing: unwrap and optional, and provide a default value if nil
+* multiple optionals using optional chaining
+
+
+### Day 15: 20220619
+
+#### SwiftUI Day 15: review
