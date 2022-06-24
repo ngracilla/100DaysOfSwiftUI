@@ -265,7 +265,6 @@ see optionals.playground:
 * nil coalescing: unwrap and optional, and provide a default value if nil
 * multiple optionals using optional chaining
 
+### Day 16: 20220621
 
-### Day 15: 20220619
-
-#### SwiftUI Day 15: review
+#### SwiftUI Day 16: Project 1, part one.
