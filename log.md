@@ -290,3 +290,42 @@ Notes
 * `tupleView`: the reason views are restricted to 10
 * conditional modifiers: it's very common to use ternary expressions: `.foregroundColor(useRedText ? .red : .blue` - superior to an `if` clause that constructs multiple view objects
 * Environment modifiers (like fonts) can be applied to a container view, like `HStack` or `VStack`, and apply to all objects in the container
+
+### Break
+
+#### Intermezzo: managaging XCode windows with keyboard shortcuts
+
+##### Project Navigator
+
+* cmd + 0: show/hide navigator
+* cmd + [1...9]: show various panels
+
+##### Preview ("CANVAS")
+
+* opt + cmd + ret: show preview
+* cmd + return: show code only
+* opt + cmd + p: run preview
+
+##### Debug area
+
+* cmd + shift + Y: show/hide
+
+##### Inspector area
+
+* opt + cmd + 0: show/hide
+* opt + cmd + [1..3]: panels in inspector
+
+##### Formatting code
+
+(menu Editor > Structure)
+
+* cmd + [; cmd + ]: shift code L, R
+* ctrl + i: re-indent
+* cmd + /: comment
+
+### Day 25: 20220715
+
+#### Recap of work to date: views, modifiers, state, stack layouts, and more
+
+* Picker: a form component that creates table-based layouts with additional screens
+* NavigationView, @State,
