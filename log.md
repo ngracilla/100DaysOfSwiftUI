@@ -267,4 +267,26 @@ see optionals.playground:
 
 ### Day 16: 20220621
 
-#### SwiftUI Day 16: Project 1, part one.
+#### SwiftUI Day 16: Project 1, part one
+
+### Day 17-21
+
+### Day 23, Project 3 part 1: 20220702
+
+The technique questions:
+* what are views and view modifiers?
+* why `some View` so much?
+* Why does swiftUI use structs for views?
+
+Notes
+
+* In UIKit, every view descended from a class `UIView`, which were very complex, with over 200 properties and methods
+* In SwiftUI, we use structs, which are very lightweight, memory efficient
+* Views as structs is a 'functional design approach': views are immutable, they are data interpretations
+* This supports isolating state: views are less complex for the compiler (and us)
+* Color.red and the gradients — these are views, super simple, composeable views
+* Modifier order really matters - because modifiers stack up as they are applied to a view
+* opaque return types: `some View` defines an object that conforms to the View protocol
+* `tupleView`: the reason views are restricted to 10
+* conditional modifiers: it's very common to use ternary expressions: `.foregroundColor(useRedText ? .red : .blue` - superior to an `if` clause that constructs multiple view objects
+* Environment modifiers (like fonts) can be applied to a container view, like `HStack` or `VStack`, and apply to all objects in the container
