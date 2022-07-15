@@ -1,8 +1,8 @@
 # 100DaysOfSwiftUI
 
-> 100 Days Of SwiftUI Challenge by Paul Hudson: https://www.hackingwithswift.com/100/swiftui
+I'm using Paul Hudson's [#100DaysOfSwiftUI](https://www.hackingwithswift.com/100/swiftui) to drive #100DaysOfCode; days do not correspond one-to-one.
 
-I'm using #100DaysOfSwiftUI as content for my #100DaysOfCode; these days do not correspond one-to-one. See [my log](/log.md) for progress notes.
+Progress notes found in [my log](/log.md).
 
 ## Days 1-14: Introduction to Swift
 
@@ -13,10 +13,10 @@ I'm using #100DaysOfSwiftUI as content for my #100DaysOfCode; these days do not 
 - ✅  [Day 5](https://www.hackingwithswift.com/100/swiftui/5) – if, switch, and the ternary operator
 - ✅  [Day 6](https://www.hackingwithswift.com/100/swiftui/6) – loops, summary, and checkpoint 3
 - ✅  [Day 7](https://www.hackingwithswift.com/100/swiftui/7) – functions, parameters, and return values
-- [Day 8](https://www.hackingwithswift.com/100/swiftui/8) – default values, throwing functions, and checkpoint 4
-- [Day 9](https://www.hackingwithswift.com/100/swiftui/9) – closures, passing functions into functions, and checkpoint 5
-- [Day 10](https://www.hackingwithswift.com/100/swiftui/10) – structs, computed properties, and property observers
-- [Day 11](https://www.hackingwithswift.com/100/swiftui/11) – access control, static properties and methods, and checkpoint 6
-- [Day 12](https://www.hackingwithswift.com/100/swiftui/12) – classes, inheritance, and checkpoint 7
-- [Day 13](https://www.hackingwithswift.com/100/swiftui/13) – protocols, extensions, and checkpoint 8
-- [Day 14](https://www.hackingwithswift.com/100/swiftui/14) – optionals, nil coalescing, and checkpoint 9
+- ✅  [Day 8](https://www.hackingwithswift.com/100/swiftui/8) – default values, throwing functions, and checkpoint 4
+- ✅  [Day 9](https://www.hackingwithswift.com/100/swiftui/9) – closures, passing functions into functions, and checkpoint 5
+- ✅  [Day 10](https://www.hackingwithswift.com/100/swiftui/10) – structs, computed properties, and property observers
+- ✅  [Day 11](https://www.hackingwithswift.com/100/swiftui/11) – access control, static properties and methods, and checkpoint 6
+- ✅  [Day 12](https://www.hackingwithswift.com/100/swiftui/12) – classes, inheritance, and checkpoint 7
+- ✅  [Day 13](https://www.hackingwithswift.com/100/swiftui/13) – protocols, extensions, and checkpoint 8
+- ✅  [Day 14](https://www.hackingwithswift.com/100/swiftui/14) – optionals, nil coalescing, and checkpoint 9
