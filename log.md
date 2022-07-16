@@ -319,7 +319,8 @@ Notes
 
 (menu Editor > Structure)
 
-* cmd + [; cmd + ]: shift code L, R
+* cmd + [; cmd + ]: shift code L, R horizontally
+* cmd + opt + [; cmd + opt + ]: shift line up, down vertically
 * ctrl + i: re-indent
 * cmd + /: comment
 
@@ -327,5 +328,16 @@ Notes
 
 #### Recap of work to date: views, modifiers, state, stack layouts, and more
 
+[recap](https://www.hackingwithswift.com/guide/ios-swiftui/2/1/what-you-learned)
+
 * Picker: a form component that creates table-based layouts with additional screens
-* NavigationView, @State,
+* NavigationView, @State
+* two-way bindings for `TextField` and `Picker` with `$variable`
+* `HStack`, `VStack`, `ZStack` as grids
+
+#### SwiftUI Day 25: The Challenge
+
+Win or Loose at rock, paper, or scissors!
+
+* Built game 3x as code kata
+* Abstracted game length, probably could use an optional for score
