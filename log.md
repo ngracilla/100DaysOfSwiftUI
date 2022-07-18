@@ -341,3 +341,10 @@ Win or Loose at rock, paper, or scissors!
 
 * Built game 3x as code kata
 * Abstracted game length, probably could use an optional for score
+
+### Day 26: 20220716
+
+* Starting BetterRest — demonstrating regression analysis and machine learning to determine "when you ought to go to bed."
+* Working with `Stepper` for numeric data entry, with attributes for range and step increments
+* 'DatePicker' - for entering date and time data, with bound ranges specified or open
+* working with Dates programmatically is, really, tough. `DateComponents` help us access elements of a date object

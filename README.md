@@ -33,3 +33,17 @@ Progress notes found in [my log](/log.md).
 - ✅  [Day 23](https://www.hackingwithswift.com/100/swiftui/23) – Project 3: views, modifiers, and composition
 - ✅  [Day 24](https://www.hackingwithswift.com/100/swiftui/24) – Project 3: wrap up, review
 - ✅  [Day 25](https://www.hackingwithswift.com/100/swiftui/25) - Milestone: challenge
+
+## Days 26-34: Expanding your skills
+
+- ✅  [Day 26](https://www.hackingwithswift.com/100/swiftui/26) – Project 4, part one
+- Day 27 – Project 4, part two
+- Day 28 – Project 4, part three
+- Day 29 – Project 5, part one
+- Day 30 – Project 5, part two
+- Day 31 – Project 5, part three
+- Day 32 – Project 6, part one
+- Day 33 – Project 6, part two
+- Day 34 – Project 6, part three
+-
+-
