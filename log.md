@@ -360,3 +360,23 @@ Win or Loose at rock, paper, or scissors!
 * Recapped `DatePicker`, `Stepper`, `Date`, and `DateComponents`.
 * Refine sleep app UI
 * Completed challenge
+
+### Day 29: 20220720
+
+* I have no idea what's going on with the dates in this log, sorry.
+* Reviewed https://developer.apple.com/tutorials/swiftui/creating-and-combining-views and learned some great tools:
+  * Multiple Views
+  * Using the Inspector to reveal modifiers for views
+  * Continue this series later with Building [Lists and Navigation](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation)
+
+* `List`: In UIKit, `UITableView`: the workhorse of views. Supports Sections, and combinations of static and dynamic content
+* Loading text file assets requires a bit of work; we use the datatype `URL`
+* When working with strings, we get a method `components(separatedBy:)` that converts a single string (like a CSV) into a an array of strings.
+* We can call `randomElement() on an array, which returns an optional string
+* It's easy to clean up whitespace and new lines from data with `trimmingCharacters(in:)`
+* We can check for mispelled words with `UITextChecker` but, heads up, the API is hoary as it comes from Objective-C.
+
+### Day 29: 20220720
+
+* very clever UI: `(word.count).circle` uses SF Symbols, which has numbers in circles from 0 to 50
+* so easy to add `withAnimation` to the insert clause for a beautiful, useful animation
