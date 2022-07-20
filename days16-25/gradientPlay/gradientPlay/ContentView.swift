@@ -8,46 +8,47 @@
 import SwiftUI
 
 struct ContentView: View {
-    let colors: [Color] = [.pink, .red, .orange, .yellow,
-        .green,
-                           
-        .mint,
-  
-        .teal,
-.cyan,
-                           .blue,
-                           
-
-        .purple,
-                           .indigo,
-                           
-                           
-                .black,
-                           .brown,
-                           .gray,
-
-        .white ]
+    let colors: [Color] = [
+        .white,
+        .black,
+        .init(uiColor: .systemPink),
+        .init(uiColor: .systemRed),
+        .init(uiColor: .systemOrange),
+        .init(uiColor: .systemYellow),
+        .init(uiColor: .systemGreen),
+        .init(uiColor: .systemMint),
+        .init(uiColor: .systemTeal),
+        .init(uiColor: .systemCyan),
+        .init(uiColor: .systemBlue),
+        .init(uiColor: .systemIndigo),
+        .init(uiColor: .systemPurple),
+        .init(uiColor: .systemPink),
+        .init(uiColor: .systemBrown),
+        .init(uiColor: .systemGray),
+        .init(uiColor: .systemGray2),
+        .init(uiColor: .systemGray3),
+        .init(uiColor: .systemGray4),
+        .init(uiColor: .systemGray5),
+        .init(uiColor: .systemGray6)
+    ]
         
-    let gradient1 = LinearGradient(gradient: Gradient(colors:[.green, .yellow]), startPoint: .topLeading, endPoint: .center)
-
-    var gradient2 = { (_ color: Color) in
-        LinearGradient(gradient: Gradient(colors:[color, .black]), startPoint: .leading, endPoint: .trailing)
+    var gradient = { (_ color: Color) in
+        LinearGradient(gradient: Gradient(colors:[color, .white]), startPoint: .leading, endPoint: .topTrailing)
     }
     
     var body: some View {
-        VStack(spacing: 0) {
+        VStack(spacing:0) {
             ForEach(colors, id: \.self) { color in
                 Rectangle()
                     
-                        .fill(gradient2(color))
-//                        .frame(width:50, height: 50)
+                        .fill(gradient(color))
                                 
-
             }
-        }
+        } // Vstack
+        .ignoresSafeArea()
         
-    }
-}
+    } // var body
+} //struct ContentView
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

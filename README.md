@@ -36,9 +36,9 @@ Progress notes found in [my log](/log.md).
 
 ## Days 26-34: Expanding your skills
 
-- ✅  [Day 26](https://www.hackingwithswift.com/100/swiftui/26) – Project 4, part one
-- Day 27 – Project 4, part two
-- Day 28 – Project 4, part three
+- ✅ [Day 26](https://www.hackingwithswift.com/100/swiftui/26) – Project 4, part one: playing with Create ML model generator
+- ✅ [Day 27](https://www.hackingwithswift.com/100/swiftui/27) – Project 4, part two: implementing the ML model
+- ✅ [Day 28](https://www.hackingwithswift.com/100/swiftui/28) – Project 4, part three: review and wrap
 - Day 29 – Project 5, part one
 - Day 30 – Project 5, part two
 - Day 31 – Project 5, part three

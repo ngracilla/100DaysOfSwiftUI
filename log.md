@@ -348,3 +348,9 @@ Win or Loose at rock, paper, or scissors!
 * Working with `Stepper` for numeric data entry, with attributes for range and step increments
 * 'DatePicker' - for entering date and time data, with bound ranges specified or open
 * working with Dates programmatically is, really, tough. `DateComponents` help us access elements of a date object
+
+### Day 27: 20220717
+
+* Playing with basic layout: need to get a better sense of `NavigationLayout` and all its options
+* Implemented the ML model from yesterday into a simple app to predict a good bedtime (wow)
+* Updated my colors experiment app
