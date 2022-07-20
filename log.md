@@ -354,3 +354,9 @@ Win or Loose at rock, paper, or scissors!
 * Playing with basic layout: need to get a better sense of `NavigationLayout` and all its options
 * Implemented the ML model from yesterday into a simple app to predict a good bedtime (wow)
 * Updated my colors experiment app
+
+### Day 28: 20220718
+
+* Recapped `DatePicker`, `Stepper`, `Date`, and `DateComponents`.
+* Refine sleep app UI
+* Completed challenge
