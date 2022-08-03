@@ -17,18 +17,20 @@ struct ContentView: View {
     @State private var errorMessage = ""
     @State private var showingError = false
     
+    @State private var score = 0
+    
     
     var body: some View {
         
         NavigationView {
             List {
                 
-                Section("What word can you spell from it?") {
+                Section("What words can you spell from it?") {
                     TextField("Enter your word", text: $newWord)
                         .textInputAutocapitalization(.never)
                 }
                 
-                Section("submitted") {
+                Section("Word list") {
                     ForEach(usedWords, id: \.self) { word in
                         HStack {
                             Image(systemName: "\(word.count).circle")
@@ -38,6 +40,20 @@ struct ContentView: View {
                 }
             }
             .navigationTitle(rootWord)
+            .toolbar {
+                ToolbarItemGroup(placement:.navigationBarTrailing ) {
+                    Button("New game", action: startGame)
+                }
+            }
+            .safeAreaInset(edge: .bottom) {
+                Text("Score: \(score)")
+                    .font(.title3)
+                    .frame(maxWidth:.infinity)
+                    .padding()
+                    .background(.gray)
+                    .foregroundColor(.white)
+            }
+            
             .onSubmit(addNewWord)
             .onAppear(perform: startGame)
             .alert(errorTitle, isPresented: $showingError) {
@@ -67,12 +83,22 @@ struct ContentView: View {
             wordError(title: "Is that a word?", message: "Your word isn't recognized.")
             return
         }
+       
+        guard isTooShort(word: answer) else {
+            wordError(title: "Too short", message: "Words must be three characters or more.")
+            return
+        }
         
+        guard isSame(word: answer) else {
+            wordError(title: "Must be different", message: "Submit a different word")
+            return
+        }
         
         withAnimation {
         usedWords.insert(answer, at: 0)
         }
         newWord = ""
+        score += answer.count
     }
     
     func startGame() {
@@ -80,6 +106,10 @@ struct ContentView: View {
             if let startWords = try? String(contentsOf: startWordsURL) {
                 let allWords = startWords.components(separatedBy: "\n")
                 rootWord = allWords.randomElement() ?? "foobarto"
+                
+                newWord = ""
+                usedWords.removeAll()
+                score = 0
                 return
             }
         }
@@ -88,6 +118,14 @@ struct ContentView: View {
     
     func isOriginal(word: String) -> Bool {
         !usedWords.contains(word)
+    }
+    
+    func isSame(word: String) -> Bool {
+        !(word == rootWord)
+    }
+    
+    func isTooShort(word: String) -> Bool {
+        !(word.count < 3)
     }
     
     func isPossible(word: String) -> Bool {

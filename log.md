@@ -376,7 +376,22 @@ Win or Loose at rock, paper, or scissors!
 * It's easy to clean up whitespace and new lines from data with `trimmingCharacters(in:)`
 * We can check for mispelled words with `UITextChecker` but, heads up, the API is hoary as it comes from Objective-C.
 
-### Day 29: 20220720
+### Day 30: 20220720
 
 * very clever UI: `(word.count).circle` uses SF Symbols, which has numbers in circles from 0 to 50
 * so easy to add `withAnimation` to the insert clause for a beautiful, useful animation
+
+### Day 31: 20220721
+
+Wrap up and review.
+
+### Day 32: 20220722
+
+Animations!
+-
+
+
+
+### Day 33: 20220723
+
+- LFLift: a prototype for a workout.
