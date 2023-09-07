@@ -2,21 +2,23 @@ import Cocoa
 import Darwin
 
 var greeting = "Hello, World."
-let world = "Earth"
+let world = "Chicago"
 greeting = "Hello, "
 print (greeting + world + ".")
-var year = 2022
-print ("In \(year), SwiftUI is a fine language to learn.")
+var year = 2023
+print ("It's \(year), and SwiftUI is a fine language to learn this fall.\n\n")
 
 /* Convert Celsius to Farenheit */
-
-let today = "June 5"
-let tempInC = 19.5
+print ("STRING INTERPOLATION")
+let today = "Sept 5"
+let tempInC = 21
 let tempInF = (tempInC * 9 / 5) + 32
 print ("In Chicago on \(today), \(year), it's \(tempInC)°C, or \(tempInF)°F.")
+print ("\n\n")
 
 /* Arrays */
 
+print ("ARRAYS")
 var pets = ["Cats", "Dogs", "Giraffes", "Hyenas"]
 print (pets[0])
 pets.append("Coyotes")
