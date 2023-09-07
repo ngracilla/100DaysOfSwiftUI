@@ -18,3 +18,7 @@ It's fall 2023 and I'm giving a go at this course again. I'll be bundling severa
 
 - prefer constants over variables when possible for optimization, control, and to avoid mistakes
 - By convention, prefer camelCase for variable or constant naming style
+
+### Built
+- Playground1
+- Checkpoint1
