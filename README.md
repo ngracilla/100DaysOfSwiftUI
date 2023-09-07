@@ -6,4 +6,5 @@ Progress notes found in [my log](/log.md).
 
 ## Days 1-15: Introduction to Swift
 
-- ✅  [Day 1](https://www.hackingwithswift.com/100/swiftui/1) – variables, constants, strings, and numbers
+- ✅ [Day 1](https://www.hackingwithswift.com/100/swiftui/1) – variables, constants, strings, and numbers
+- ✅ [Day 2](https://www.hackingwithswift.com/100/swiftui/2) – Booleans, string interpolation, and checkpoint 1

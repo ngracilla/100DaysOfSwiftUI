@@ -16,6 +16,13 @@ let tempInF = (tempInC * 9 / 5) + 32
 print ("In Chicago on \(today), \(year), it's \(tempInC)°C, or \(tempInF)°F.")
 print ("\n\n")
 
+/* Booleans */
+print ("BOOLEANS")
+let num = 60
+print("Is \(num) a multiple of 3: \(num.isMultiple(of: 3))")
+print("\n\n")
+
+
 /* Arrays */
 
 print ("ARRAYS")
