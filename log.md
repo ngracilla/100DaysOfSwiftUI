@@ -2,6 +2,28 @@
 
 It's fall 2023 and I'm giving a go at this course again. I'll be bundling several course-days of 100DaysOfSwiftUI into physical days.
 
+## 2023-09-06
+
+### SwiftUI Day 1: simple data types
+
+#### Variables, constants, strings, and numbers
+
+##### Why learn Swift?
+
+- It's a relatively young language with little cruft, built on the successes of other languages.
+- Swift is a modern (2014) general-purpose type-safe compiled programming language, developed by Apple and the open-source community, as a replacement for (while interoperating with) Objective-C. It is designed to be "Safe, Fast, and Expressive."
+- Swift makes it harder to write unsafe code; and easier to write clear, understandable code.
+
+##### Variable Conventions
+
+- prefer constants over variables when possible for optimization, control, and to avoid mistakes
+- By convention, prefer camelCase for variable or constant naming style
+
+### Built
+
+- Playground1
+- Checkpoint1
+
 ## 2023-09-07
 
 ### SwiftUI Day 2: simple data types part 2
@@ -29,24 +51,54 @@ print("Find me on Twitter: \(twitter: "nickgracilla").")
 
 - Revised playground1
 
-## 2023-09-06
+## 2023-09-08
 
-### SwiftUI Day 1: simple data types
+### SwiftUI Day 3: complex data types, part 1
 
-#### Variables, constants, strings, and numbers
+#### Arrays, dictionaries, sets, and enums
 
-##### Why learn Swift?
+##### Arrays
 
-- It's a relatively young language with little cruft, built on the successes of other languages.
-- Swift is a modern (2014) general-purpose type-safe compiled programming language, developed by Apple and the open-source community, as a replacement for (while interoperating with) Objective-C. It is designed to be "Safe, Fast, and Expressive."
-- Swift makes it harder to write unsafe code; and easier to write clear, understandable code.
+- Arrays store many values, with indices
+- Swift arrays are zero-based
 
-##### Variable Conventions
+##### Dictionaries
 
-- prefer constants over variables when possible for optimization, control, and to avoid mistakes
-- By convention, prefer camelCase for variable or constant naming style
+- Dictionaries offer keys for very fast retrieval of data
+- they send back nil if you request a non existant key, and can offer default values
+- can offer meaningful retrieval, like `cat["breed"]`.
+- optionals: dictionaries may, or may not, return a value; be warned!
+- you can use multiple data types for a dictionary's key and values:
 
-### Built
+```Swift
+var plants = [String: Bool]()
 
-- Playground1
-- Checkpoint1
+plants["basil"] = true
+plants["rosemary"] = false
+print (plants["thyme", default: true])
+
+```
+
+- Obviously, when setting default values, they must match the dictionary data type
+
+##### Sets
+
+- Sets are collections of distinct values of data (no duplicates) that have no defined order
+- Sets are highly optimized for data retrieval, regardless of the set size
+- Good use case: "does this word appear in a dictionary?"
+
+##### Enums
+
+- Enumerations are useful when you need something specfic, limited, and safe
+- by convention, appear to be first letter capped
+- "a nice name for a value"
+
+```swift
+enum Directions {
+    case north, south, east, west
+}
+
+enum TransitOptions {
+    case bike, train, car, plane, boat
+}
+```
