@@ -9,3 +9,4 @@ Progress notes found in [my log](/log.md).
 - ✅ [Day 1](https://www.hackingwithswift.com/100/swiftui/1) – variables, constants, strings, and numbers
 - ✅ [Day 2](https://www.hackingwithswift.com/100/swiftui/2) – Booleans, string interpolation, and checkpoint 1
 - ✅ [Day 3](https://www.hackingwithswift.com/100/swiftui/3) – Arrays, dictionaries, sets, and enums
+- ✅ [Day 4](https://www.hackingwithswift.com/100/swiftui/4) – Type annotations, summary, and checkpoint 2

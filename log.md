@@ -102,3 +102,37 @@ enum TransitOptions {
     case bike, train, car, plane, boat
 }
 ```
+
+## 2023-09-09
+
+### SwiftUI Day 4: Complex data types, part 2
+
+#### Type annotations, summary, and checkpoint 2
+
+- Type inference allows Swift to infer a variable type, based on the value assigned: `let fname = "John"`
+- Type annotations allow us be explicit in defining a variable type when it is created: required when you create, but don't yet assign, a value
+
+```Swift
+let surname: String = "John"
+let score: Double = 0 // not without the Double, Swift would infer this as an integer
+```
+
+```swift
+let username: String
+// stuff here
+username = "@nickgracilla"
+print (username)
+```
+
+- String
+- Int
+- Double (decimals)
+- Bool
+- Array `var herbs: [String] = ["Basil", "Rosemary"]`
+- Dictionary `var landscape: [String: String] = ["Groundcover": "Flox"]`
+- Set `var pens: Set<String> = Set(["Cheap giveaway", "gel"])`
+- Enum
+
+### Built
+
+- Challenge2.1
