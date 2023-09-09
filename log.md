@@ -133,6 +133,64 @@ print (username)
 - Set `var pens: Set<String> = Set(["Cheap giveaway", "gel"])`
 - Enum
 
+### SwiftUI Day 5: if, switch, and the ternary operator
+
+#### Conditions
+
+- comparison operators: <, <=, ==, >, >=; ==, !=
+- String comparisons in Swift are optimized. So `username == ""` is likely faster than `username.count == 0` — the count is quite inefficient, it has to count element in the string. `if username.isEmpty` is better!
+- `.isEmpty()`
+- even enums are comparable (in terms of their relative position in the case list)
+- if, else if, else
+- Logical operators: &&, ||
+
+##### Why use `switch` over `if`?
+
+```Swift
+switch i {
+    case i < 5: {
+
+    }
+    case i < 5: {
+
+    }
+}
+```
+- switch statements are exhaustive: good to explore every option
+- when switch checks a value, it's read only once: important for expensive function calls!
+- case statements evaluate in order, and stop evaluating by default, without `fallthrough` (which skips the conditional)
+
+#### Ternary conditional operator: "WTF"
+
+- exceptionally important in SwiftUI, where in SwiftUI we often must use it, where there's many stacked conditions
+
+```swift
+
+let herb = "basil"
+let sweetHerb = herb == "basil" ? true : false
+
+```
+
+### SwiftUI Day 6: Loops
+
+#### loops
+
+- `for _ in 1...5` useful when you don't need a loop variable
+- half-open ranges: `print(names[1..<5])` excludes the final number: exceptionally useful with arrays which begin from 0
+- one sided ranges: `print(names[1...])`
+- `while x < 0`: generally, while loops are used less often; but fine for arbitrary conditions
+- `continue` (jump to next item) vs `break` (skip this and all future loops)
+
+#### summary
+
+#### checkpoint 3
+
+FizzBuzz!
+
+Loop 1 to 100; if it's a multiple of 3, print "fizz", if multiple of 5, "buzz," if multiple of 15, "fizbuzz"; otherwise print the number.
+
 ### Built
 
-- Challenge2.1
+- Checkpoint2.1
+- Playground2.1
+- Checkpoint3.1
