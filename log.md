@@ -156,6 +156,7 @@ switch i {
     }
 }
 ```
+
 - switch statements are exhaustive: good to explore every option
 - when switch checks a value, it's read only once: important for expensive function calls!
 - case statements evaluate in order, and stop evaluating by default, without `fallthrough` (which skips the conditional)
