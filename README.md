@@ -12,3 +12,4 @@ Progress notes found in [my log](/log.md).
 - ✅ [Day 4](https://www.hackingwithswift.com/100/swiftui/4) – type annotations, summary, and checkpoint 2
 - ✅ [Day 5](https://www.hackingwithswift.com/100/swiftui/5) – if, switch, and the ternary operator
 - ✅ [Day 6](https://www.hackingwithswift.com/100/swiftui/6) – loops, summary, and checkpoint 3
+- ✅ [Day 7](https://www.hackingwithswift.com/100/swiftui/7) – functions, parameters, and return values

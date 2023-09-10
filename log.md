@@ -190,8 +190,54 @@ FizzBuzz!
 
 Loop 1 to 100; if it's a multiple of 3, print "fizz", if multiple of 5, "buzz," if multiple of 15, "fizbuzz"; otherwise print the number.
 
+### SwiftUI Day 7: Functions, part one
+
+#### functions, parameters, and return values
+
+- functions are case sensitive!
+- strictly speaking, distinguish between parameters and arguments: *parameters* are placeholders for functions and are used in the function definition; *arguments* are actual values passed to a function in the function call
+- *function composition*: build functions out of existing functions
+- single expression functions without `return` are very common in SwiftUI; thus the ternary operator becomes even more important
+
+#### Tuples
+
+- tuples have a fixed number of values of fixed types
+- return multiple values from a function in tuples; they are guaranteed to be present
+- destructuring: call a function without explicit variable assignments, like:
+
+```swift
+let (firstname, _) = getUser()
+print ("\(firstName)")
+```
+
+#### Omit or customize parameter labels
+
+- oddly: you can have multiple functions with the same name; and distinguish between them by their parameter names
+- `_ ` before the parameter name specifies no external label
+- you can also specify an external, and internal name:
+
+```Swift
+func printTimesTable (for number: Int) {
+    for in 1...12 {
+        print("\(i) x \(number) is \(i * number))
+    }
+}
+printTimesTable(for: 5)
+
+```
+
 ### Built
 
 - Checkpoint2.1
 - Playground2.1
 - Checkpoint3.1
+- Projects/celcius: space to record iterations towards celcius app
+
+## 2023-09-10
+
+Cleaned up and completed yesterday's work;
+
+### Built
+
+- functions2.playground
+- projects/celcius/playgrounds/playground1
