@@ -218,8 +218,8 @@ print ("\(firstName)")
 
 ```Swift
 func printTimesTable (for number: Int) {
-    for in 1...12 {
-        print("\(i) x \(number) is \(i * number))
+    for i in 1...12 {
+        print("\(i) x \(number) is \(i * number)")
     }
 }
 printTimesTable(for: 5)
