@@ -235,9 +235,25 @@ printTimesTable(for: 5)
 
 ## 2023-09-10
 
-Cleaned up and completed yesterday's work;
+Cleaned up and completed yesterday's work.
 
-### Built
+### SwiftUI Day 8: Functions, part 2
+
+#### default values
+
+- straightforward to provide a default value for function parameters, then call and skip those parameters!
+
+#### throwing functions
+
+- a function throws an error; the caller uses a `do` - `try` - `catch` famework
+- the final catch of a throw-catch function error, which may catch all errors, is charmingly called Pokémon Exception Handling — Gotta catch em all!
+- see `function-error-handling.playground' for a fine example.
+
+#### checkpoint 4
+
+## Built
 
 - functions2.playground
 - projects/celcius/playgrounds/playground1
+- expanded on project celcius feature ideas
+- checkpoint4.1: mostly forgot the nice calling code; otherwise got through this myself.
