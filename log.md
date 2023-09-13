@@ -251,9 +251,93 @@ Cleaned up and completed yesterday's work.
 
 #### checkpoint 4
 
-## Built
+### Built
 
 - functions2.playground
 - projects/celcius/playgrounds/playground1
 - expanded on project celcius feature ideas
 - checkpoint4.1: mostly forgot the nice calling code; otherwise got through this myself.
+
+## 2023-09-11
+
+### SwiftUI Day 9: Closures
+
+#### creating and using closures
+
+- Closures are used extensively throughout SwiftUI; they wrap up functionality that can be used, perhaps later
+- You don't use parameter names when calling a closure; and closures cannot have external parameter names, used internally
+- *Closure expression*: you can skip creating a function, and just assign the functionaly directly to a variable or constant
+- you can pass a function into another function
+- hence, you can use a closure to define a function that is passed into another function
+- *function types*:
+  - external parameter names only matter when we're calling a function directly, not when we create a closure, or take a copy of a function
+
+#### trailing closures and shorthand syntax
+
+- consider a function, which accepts a function with requirements: like sorted(). We know it must provide two strings and return a Boolean. So there's no need to repeat ourselves in type specifications in parameters, or return type, because we know them all already.
+- *trailing closure syntax*: rather than passing a closure as a parameter, start the closure right away!
+- *shorthand syntax*: $0, $1 reference the first and second passed in strings
+
+```Swift
+let reverseTeam = team.sorted {
+    return $0 > $1
+}
+
+//  equiv to:
+let reverseTeam = team.sorted { $0 > $1 }
+```
+
+#### functions as parameters
+
+### Built
+
+- closures2.playground
+- checkpoint5.1
+
+## 2023-09-12
+
+### SwiftUI Day 10: Structs, part one
+
+- every piece of UI we build, is built on a struct, with lots of structs inside
+- all data types, and structs, use FirstLetterCamelCase; functions and variables within a type use firstLetterCamelCase
+
+#### Creating Structs
+
+- *mutating*: keyword that identifes functions within a struct, that change properties
+- *properties*: variables and constants that belong to structs
+- *methods*: functions that belong to a type, like structs, enums, and classes
+- *functions*: functions that do not belong to a type. (methods avoid namespace pollution)
+- *instance*: a constant or variable created out of a struct
+- *initializer*: the struct property assignments that create an instance
+- *getter*, *setter*: code that reads and writes
+
+#### Computing property values dynamically
+
+- *stored* properties of a struct: hold data
+- *computed* properties of a struct: calculate value dynamically when it's accessed
+
+### Built
+
+- structs2.playground
+- in Figma, celcius.app mockup v1
+
+### Post
+
+Day 7 of #100DaysOfCode / Day 10 of #100DaysOfSwiftUI
+
+Exhausting day at work today with a super-early wakeup and all day jam. Managed to get a few exercises with Structs, mutating functions, and calculated properties. Finish up the Structs study tomorrow.
+
+## 2023-09-13
+
+### SwiftUI Day 10: Structs, part one CONTINUED
+
+
+#### Taking action when a property changes
+
+#### Creating custom initializers
+
+### Built
+
+### Post
+
+Day 8 of #100DaysOfCode / Day 10 of #100DaysOfSwiftUI
