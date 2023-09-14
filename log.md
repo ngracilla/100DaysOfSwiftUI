@@ -331,13 +331,39 @@ Exhausting day at work today with a super-early wakeup and all day jam. Managed 
 
 ### SwiftUI Day 10: Structs, part one CONTINUED
 
-
 #### Taking action when a property changes
+
+- *property observers*: `didset` and `willset` run functionality if a value was or will be changed
 
 #### Creating custom initializers
 
+- special methods that prepare a struct: you can custom create your own; just ensure all properties have values
+- *memberwise initializer*: an initializer that accepts each property in the order declared
+
+```Swift
+struct Player {
+    let name: String
+    let number: Int
+
+    init(name: String) {
+        self.name = name
+        number = Int.random(in: 1...99)
+    }
+}
+
+let player = Player(name: "Megan R")
+print(player.number)
+
+```
+
 ### Built
+
+- quiz on property observers
+- quiz on initializers
+- quiz on the use of `self.` in struct initalizers
 
 ### Post
 
 Day 8 of #100DaysOfCode / Day 10 of #100DaysOfSwiftUI
+
+A light day, fitting for a long work day. Studied some features of struct data structures: property observers, memberwise initializers, and custom initializers.
