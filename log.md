@@ -367,3 +367,33 @@ print(player.number)
 Day 8 of #100DaysOfCode / Day 10 of #100DaysOfSwiftUI
 
 A light day, fitting for a long work day. Studied some features of struct data structures: property observers, memberwise initializers, and custom initializers.
+
+## 2023-09-14
+
+### SwiftUI Day 11: Structs, part two
+
+#### Access control
+
+- *private* - keyword applicable to variables, constants, and methods in a struct, ensuring they are not accessible externally
+- *fileprivate* - don't allow anything outside the current file
+- *public* - let anything anywhere access and use
+- *private(set) - only internal methods can change it, but allow external reads
+- you typically use custom initializers when you use access control
+
+#### Static properties and methods
+
+- *static* - keyword applicable to properties and methods of a function, that declares the property or function belongs not to an instance of the struct, but the sruct itself.
+- might use this to create a struct of shared data throughout
+
+### Built
+
+- log updates
+- review on access control
+- review on static properties
+- checkpoint6.1
+
+### Post
+
+Day 9 of #100DaysOfCode / Day 11 of #100DaysOfSwiftUI
+
+Early morning study: struct access controls and static properties. Built a struct model Car(), with name and gears. Used access controls, mutating functions, and custom inits.

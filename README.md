@@ -16,3 +16,4 @@ Progress notes found in [my log](/log.md).
 - ✅ [Day 8](https://www.hackingwithswift.com/100/swiftui/8) – default values, throwing functions, and checkpoint 4
 - ✅ [Day 9](https://www.hackingwithswift.com/100/swiftui/9) – closures, passing functions into functions, and checkpoint 5
 - ✅ [Day 10](https://www.hackingwithswift.com/100/swiftui/10) – structs, computed properties, and property observers
+- ✅ [Day 11](https://www.hackingwithswift.com/100/swiftui/11) – access control, static properties and methods, and checkpoint 6
