@@ -397,3 +397,43 @@ A light day, fitting for a long work day. Studied some features of struct data s
 Day 9 of #100DaysOfCode / Day 11 of #100DaysOfSwiftUI
 
 Early morning study: struct access controls and static properties. Built a struct model Car(), with name and gears. Used access controls, mutating functions, and custom inits.
+
+## 2023-09-15
+
+I'm 10% through 100 days! It's day 10 of #100DaysOfCode / Day 12 of #100DaysOfSwiftUI
+
+Classes are reference types in Swift; all copies of a class refer back to the same data, allowing it to be shared. Studied classes, class inheritance, and class initalizers.
+
+## 2023-09-16
+
+### Post
+
+Day 11 of #100DaysOfCode / Day 12 of #100DaysOfSwiftUI
+
+From Structs to Classes: reference types in Swift in which all copies refer to the same data, allowing it to be shared. Studied classes, class inheritance, and class initalizers.
+
+
+## 2023-09-17
+
+## 2023-09-18
+
+- Watched Design with SwiftUI video.
+
+### Post
+
+Day 12 of #100DaysOfCode
+
+Took a break from code to watch Design with SwiftUI, and to think about SwiftUI as a design tool. The new map app in Watch OS 10 used a parameterized tool that helped the designers scrub across a wide range of design parameters. Sweet!
+
+## 2023-09-19
+
+### Built
+
+- Checkpoint7.1
+- Checkpoint8.1
+
+### Post
+
+Day 13 of #100DaysOfCode / Day 13 of #100DaysOfSwiftUI
+
+Swift Protocols: they act like a contract for how structs, classes, and enums should work. When a type conforms to a protocol, you know it's been implemented correctly. Helps us to abstract data. "This method works on anything that conforms to that protocol."
