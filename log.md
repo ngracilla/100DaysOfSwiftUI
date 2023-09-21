@@ -437,3 +437,44 @@ Took a break from code to watch Design with SwiftUI, and to think about SwiftUI 
 Day 13 of #100DaysOfCode / Day 13 of #100DaysOfSwiftUI
 
 Swift Protocols: they act like a contract for how structs, classes, and enums should work. When a type conforms to a protocol, you know it's been implemented correctly. Helps us to abstract data. "This method works on anything that conforms to that protocol."
+
+## 2023-09-20
+
+- Optionals: "this might have data, or not," and you can't use that data until it's unwrapped and confirmed.
+- when unwrapping optionals, it’s very common to unwrap them into a constant of the same name: *shadowing* creates a second constant only available in the condition's body.
+- typically unwrapped with `if let`
+
+```Swift
+
+var username: String? = nil
+
+if let unwrappedName = username {
+    print("We got a user: \(unwrappedName)")
+} else {
+    print("The optional was empty.")
+}
+```
+
+- or unwrapped with `guard let else` : if it can't be unwrapped, do something and exit. Often seen at the start of methods to verify conditions before running some code.
+
+```Swift
+
+func uppercase(string: String?) -> String? {
+	guard let string = string else {
+		return nil
+	}
+	return string.uppercased()
+}
+if let result = uppercase(string: "Hello") {
+	print(result)
+}
+```
+
+### Built
+
+
+### Post
+
+Day 14 of #100DaysOfCode, #100DaysOfSwiftUI
+
+Two weeks in! Completed the fundamentals of Swift with a study on optionals, and how Swift handles variable null references.
