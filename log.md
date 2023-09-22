@@ -472,9 +472,21 @@ if let result = uppercase(string: "Hello") {
 
 ### Built
 
+- practice classes, working with ChatGPT
 
 ### Post
 
 Day 14 of #100DaysOfCode, #100DaysOfSwiftUI
 
 Two weeks in! Completed the fundamentals of Swift with a study on optionals, and how Swift handles variable null references.
+
+## 2023-09-20
+
+### Built
+
+
+### Post
+
+Day 15 of #100DaysOfCode, #100DaysOfSwiftUI
+
+#100DaysofSwiftUI @twostraws updates for iOS 17 launch tomorrow; excited to see what's new. In the meantime, it's a recap day — and the last day to review Swift fundamentals before getting into actual app development. It's been a joy.
