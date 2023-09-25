@@ -490,3 +490,31 @@ Two weeks in! Completed the fundamentals of Swift with a study on optionals, and
 Day 15 of #100DaysOfCode, #100DaysOfSwiftUI
 
 #100DaysofSwiftUI @twostraws updates for iOS 17 launch tomorrow; excited to see what's new. In the meantime, it's a recap day — and the last day to review Swift fundamentals before getting into actual app development. It's been a joy.
+
+## 2023-09-20
+
+- There are several ways of storing program state in SwiftUI, and you’ll learn all of them. `@State`` is specifically designed for simple properties that are stored in one view.
+- *two way bindings*: views are a function of their state. A two way binding binds a form field to the value of a property, and binds changes to update the property as well. `$name`: tells Swift that it should read the value of the property but also write it back as any changes happen.
+
+### Built
+
+
+### Post
+
+Day 15 of #100DaysOfCode, #100DaysOfSwiftUI
+
+## 2023-09-21
+
+- `@state`: manage state using simple properties, storied in one view only; typically we add `private`
+- `Picker` view, show options for users to select
+
+### Built
+
+- WeSplit2/code-sketches
+-
+
+### Post
+
+Day 16 of #100DaysOfCode, Days 16-18 #100DaysOfSwiftUI
+
+Built a tip calculator. Studied state management, pickers, segmented controls, and the call structure of a SwiftUI native app.
