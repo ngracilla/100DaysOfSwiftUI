@@ -503,7 +503,7 @@ Day 15 of #100DaysOfCode, #100DaysOfSwiftUI
 
 Day 15 of #100DaysOfCode, #100DaysOfSwiftUI
 
-## 2023-09-21
+## 2023-09-24
 
 - `@state`: manage state using simple properties, storied in one view only; typically we add `private`
 - `Picker` view, show options for users to select
@@ -518,3 +518,12 @@ Day 15 of #100DaysOfCode, #100DaysOfSwiftUI
 Day 16 of #100DaysOfCode, Days 16-18 #100DaysOfSwiftUI
 
 Built a tip calculator. Studied state management, pickers, segmented controls, and the call structure of a SwiftUI native app.
+
+
+## 2023-09-27
+
+### Post
+
+Day 17 of #100DaysOfCode, Day 19 #100DaysOfSwiftUI
+
+Challenge day: merging prior work into my app, getCelsius, which will help F users better understand C. A quick little converter app. Discovered I'd love a 300 °K day.
